@@ -18,7 +18,7 @@ class Psr15Middleware implements BridgeInterface
         $this->bootstrapApplicationEnvironment($appBootstrap, $appenv, $debug);
 
         if (!$this->middleware instanceof RequestHandlerInterface) {
-            throw new \Exception('Request handler must implement RequestHandlerInterface');
+            throw new \Exception('Middleware must implement RequestHandlerInterface');
         }
     }
 
